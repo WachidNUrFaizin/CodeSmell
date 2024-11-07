@@ -11,6 +11,8 @@ package com.mycompany.codesmell3;
 public class CodeSmell3 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Order order = new Order("Bimo", "123 Main St", "bimo@example.com", "Product A", 2, 49.99);
+        OrderProcessor processor = new OrderProcessor();
+        processor.processOrder(order);
     }
 }
